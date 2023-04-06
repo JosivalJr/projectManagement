@@ -1,0 +1,46 @@
+.greenBtn {
+	display: inline-block;
+	height: 50px;
+    margin-top: 20px;
+	background: #19b479;
+	color: #fff;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+}
+
+.btnLogin:hover {
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.form-box {
+	margin-top: 20px;
+}
+
+.form-top {
+	overflow: hidden;
+	padding: 0 15px 5px 15px;
+	background: #fff;
+	-moz-border-radius: 4px 4px 0 0; -webkit-border-radius: 4px 4px 0 0; border-radius: 4px 4px 0 0;
+	text-align: left;
+}
+
+.form-top-left {
+	float: left;
+	width: 75%;
+	padding-top: 25px;
+}
+
+.form-bottom {
+	padding: 25px 25px 30px 25px;
+	background: #eee;
+	-moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; border-radius: 0 0 4px 4px;
+	text-align: left;
+}
+
+.form-bottom form textarea {
+	height: 100px;
+}
+
+.form-bottom form button.btn {
+	width: 100%;
+}

@@ -1,0 +1,57 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background: -webkit-linear-gradient(left, #25c481, #25b7c4);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #000000;
+    line-height: 30px;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+	margin: 20px 0px 20px 0px;
+	font-size: 38px;
+    font-weight: 100;
+    color: #fffefe;
+}
+
+nav {
+    background: linear-gradient(to right, #becdd1, #a6c9cf);
+    width: 100vw;
+    height: 5vh;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item, a {
+    color: black;
+    padding-left: 15px;
+}
+
+
+.top-content{
+    margin-top: 1vw;
+}
+
+.container{
+    margin-top: 5vh;
+    height: 85vh;
+}
+
+footer {
+    display: flex;
+    align-items: end;
+    height: 5vh;
+    padding: 1vh;
+}
+
+.alert {
+    max-width: 80vw;
+    margin: 0 auto;
+}

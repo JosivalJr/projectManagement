@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+    <link rel="stylesheet" href="/css/template.css">
+    <link rel="stylesheet" href="/css/formPattern.css">
+    <title>Projects Management</title>
+</head>
+<body>
+
+    <%- include('includes/nav') %>
+
+    <div class="container">
+        <h1><strong>Projects</strong> Management</h1>
+        
+        <%- include('includes/messages'); %>
+
+        <div class="row">
+
+            <!-- Login Form -->
+            <div class="col-sm-5">
+                <div class="form-box">
+                    <div class="form-top">
+                        <div class="form-top-left">
+                            <h3>Login</h3>
+                            <p>Enter username and password to log on:</p>
+                        </div>
+                    </div>
+                    <div class="form-bottom">
+
+                        <form action="/api/v1/session/login" method="POST">
+                            <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+                            <div class="form-group">
+                                <label>Username</label>
+                                <input type="text" class="form-control" name="username" >
+                            </div>
+
+                            <div class="form-group">
+                                <label>Password</label>
+                                <input type="password" class="form-control" name="password">
+                            </div>
+
+                            <button type="submit" class="btn greenBtn">Sign in</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Middle -->
+            <div class="col-sm-2 middle-border"></div>
+                
+            <!-- Register Form -->
+            <div class="col-sm-5">
+                <div class="form-box">
+                    <div class="form-top">
+                        <div class="form-top-left">
+                            <h3>Register</h3>
+                            <p>Fill in the form below to register:</p>
+                        </div>
+                    </div>
+                    <div class="form-bottom">
+                        <form class="form-cadastro" action="/api/v1/session/register" method="POST">
+                            <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+                            <div class="form-group">
+                                <label>Username</label>
+                                <input type="text" class="form-control" name="username">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Password</label>
+                                <input type="password" class="form-control" name="password">
+                            </div>
+
+                            <button type="submit" class="btn greenBtn">Register</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

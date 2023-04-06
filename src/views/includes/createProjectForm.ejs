@@ -1,0 +1,28 @@
+<form action="/api/v1/project" method="POST">
+  <input type="hidden" name="_csrf" value=<%= csrfToken %>>
+  <input type="hidden" name="done" value="false">
+  <input type="hidden" name="username" value=<%= user.username %>>
+
+  <div class="form-group">
+    <label>Title</label>
+    <input type="text" class="form-control" name="title" required>
+  </div>
+
+  <div class="form-group">
+    <label>Zip Code</label>
+    <input type="postal" class="form-control" name="zip_code" required>
+  </div>
+
+  <div class="form-group">
+    <label>Cost</label>
+    <input type="number" min="0.00" step="0.01" class="form-control" name="cost" required>
+  </div>
+
+  <div class="form-group">
+    <label>Deadline</label>
+    <input type="date" class="form-control" name="deadline" required>
+  </div>
+
+  <button type="submit" class="btn greenBtn">Create</button>
+
+</form>
