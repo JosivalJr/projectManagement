@@ -8,9 +8,9 @@
 
 ## Application
 
-<p>Simple .</p>
+<p> Simple CRUD interface built with NodeJs/EJS for project management.</p>
 
-[Postman API Documentation] ...Building...
+Postman API Documentation ...Building...
 
 
 ## Status
